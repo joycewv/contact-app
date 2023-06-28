@@ -46,13 +46,13 @@ function Contact() {
                 <Stack spacing={'5'} >
                     <FormLabel>Email:</FormLabel>
                     <Input type="email" value={email} onChange={handleChange} />
-                    <Button type="submit" colorScheme="blue"
-                            bg="#0D74FF"
-                            color="white"
+                    <Button type="submit" colorScheme={'blue'}
+                            bg={'#0D74FF'}
+                            color={'white'}
                             _hover={{
-                            bg: 'blue.500',
+                            bg:'blue.500',
                             }}
-                            isFullWidth>Retrieve Contact Details
+                            >Retrieve Contact Details
                     </Button>
                 </Stack>
             </form>
@@ -62,7 +62,6 @@ function Contact() {
                 <UnorderedList>
                 {filteredUsers.map((user) => (
                     <Flex key={user.id} flexDirection={'column'} >
-
                         <Box p={'6'}>
                             <Heading as={'h2'} size={'lg'} fontWeight={'semibold'} pb={'4'}>Contact Information</Heading>
                             <List spacing={'2'}>
@@ -78,14 +77,8 @@ function Contact() {
                                 <ListItem><Text as={'span'} fontWeight={'bold'}>Phone:</Text>{' '}
                                     {user.phone}
                                 </ListItem>
-                                <ListItem><Text as={'span'} fontWeight={'bold'}>Website:</Text>{' '}
-                                    {user.website}
-                                </ListItem>
                             </List>
                         </Box>
-
-                        
-
                         <Box p={'6'}>
                             <Heading as={'h2'} size={'lg'} fontWeight={'semibold'} pb={'4'}>Address</Heading>
                             <List spacing={'2'}>
@@ -103,13 +96,15 @@ function Contact() {
                             </ListItem>
                             </List>
                         </Box>
-
                         <Box p={'6'}>
                             <Heading as={'h2'} size={'lg'} fontWeight={'semibold'} pb={'4'}>Company Details</Heading>
                             <List spacing={'2'}>
                             <ListItem><Text as={'span'} fontWeight={'bold'}>Company Name:</Text>{' '}
                                 {user.company.name}
                             </ListItem>
+                            <ListItem><Text as={'span'} fontWeight={'bold'}>Website:</Text>{' '}
+                                    {user.website}
+                                </ListItem>
                             <ListItem><Text as={'span'} fontWeight={'bold'}>Company Catchphrase:</Text>{' '}
                                 {user.company.catchPhrase}
                             </ListItem>
@@ -118,7 +113,6 @@ function Contact() {
                             </ListItem>
                             </List>
                         </Box>
-
                     </Flex>
                 ))}
                 </UnorderedList>
