@@ -3,8 +3,15 @@
 A react app using multiple libraries and APIs. It helps users retrieve a client's full contact details by simply entering their email address.
 
 
-## Screenshot
+## Screenshots
+* Before retrieve client data
 
+![Before](https://github.com/joycewv/contact-app/assets/114795700/0bf5abe3-b130-4e15-8669-89e9ed17e216)
+
+
+* Data retrieved after entering client's email address
+
+![After](https://github.com/joycewv/contact-app/assets/114795700/a130583a-cd79-40ce-b114-20bc2cda73dc)
 
 
 ### Tech Stack:
